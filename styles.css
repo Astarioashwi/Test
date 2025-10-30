@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {             /* step 3 */
+  margin: 0;    /* step 3 */
+  padding: 0;     /* step 3 */
+  box-sizing: border-box;      /* step 3 */
+}      /* step 3 */
+html,    /* step 8 */
+body {         /* step 8 */
+  font-family: "Oswald", sans-serif;       /* step 8 */
+}       /* step 8 goto .html line 51*/
+
+.background {     /* step 3 */
+  background-image: url("./images/lion.webp");      /* step 3 */
+  height: 100vh;     /* step 4 */
+  width: 100%;      /* step 4 */
+  background-size: cover;    /* step 4 */
+
+  background-repeat: no-repeat;    /* step 4, got to .html line 16 */
+}       /* step 3 */
+.container {    /* step 6 */
+  display: grid;         /* step 6 */
+  place-items: center;      /* step 6 */
+  height: 100vh;       /* step 6 */
+}
+.container h1 { /* step 7 */
+  font-size: 4rem;      /* step 7 */
+}      /* step 7 goto .css line 8*/
+
+.settings {      /* step 15 */
+  position: absolute; /* step 15 */
+  bottom: 30px;   /* step 15 (try 0 first)*/
+  right: 20px;    /* step 15 (try 0 first) , goto line 38*/
+  display: flex;     /* step 17 */
+  align-items: center;      /* step 17 */
+  gap: 1rem;   /* step 17  goto line 42*/
+}
+.settings .fa-cog {   /* step 16 */
+  font-size: 3rem;    /* step 16 */
+  color: white;     /* step 16  goto line 34*/
+}
+.settings-content {     /* step 18 */
+  display: flex;        /* step 18 */
+  gap: 1rem;            /* step 18 */
+}
+.settings-content input { /* step 19 */
+  padding: 0.5rem 1rem;   /* step 19 first only 1 rem*/
+  font-size: 1rem;  /* step 19 */
+}
+.settings-content button {  /* step 20 */
+  padding: 0.5rem 1rem;     /* step 20 */
+  background-color: green;    /* step 20 */
+  border: none;    /* step 20 */
+  border-radius: 10px;   /* step 20 */
+  font-size: 1rem;    /* step 20 */
+  color: white;     /* step 20  goto .html line 59*/
+}
+.hide {       /* step 34 */
+  display: none;   /* step 34 */
+}     /* step 34 goto .html line 53 and add hide and goto .html line 19*/
+
+.time-container {     /* step 39 */
+  margin-top: 1rem;  /* step 39 */
+  display: flex;    /* step 39 */
+  gap: 2rem;     /* step 39 */
+  justify-content: center;   /* step 39 */
+  align-items: center;     /* step 39 */
+}
+.time-container h2 {    /* step 40 */
+  line-height: 60px;    /* step 40 */
+  text-align: center;     /* step 40 */
+  font-size: 3rem;  /* step 40 */
+}
+.time-container div {   /* step 41 */
+  font-size: 4rem;    /* step 41 */
+  color: white;     /* step 41 goto .html line 16 and line 19 and put id, goto .js line 5*/
+}                      
